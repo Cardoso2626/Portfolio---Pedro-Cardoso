@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Cabecalho from "./Components/Cabecalho/Cabecalho";
+import Rodape from "./Components/Rodape/Rodape";
 
 
 
@@ -15,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
+        <Cabecalho/>
         {children}
+        <Rodape/>
       </body>
     </html>
   );

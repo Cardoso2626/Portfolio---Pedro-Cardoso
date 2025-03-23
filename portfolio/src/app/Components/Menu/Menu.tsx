@@ -1,7 +1,10 @@
+import Link from "next/link";
+
 export default function Menu(){
     return(
-        <div>
-            <h2>Menu</h2>
-        </div>
+        <nav>
+            <li><Link href={"/"}>Voltar ao início</Link></li>
+            <li><Link href={"/informacao"}>Um pouco da minha história</Link></li>
+        </nav>
     )
 }
