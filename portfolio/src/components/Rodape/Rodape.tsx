@@ -20,7 +20,8 @@ export default function Rodape(){
                     <Link target={"_blank"} href={"https://www.instagram.com/ph.saraivax/"}>
                         <Image src={IconeInstagram} alt="Icone do Instagram"/>
                     </Link>
-                 </div>
+                </div>
+                <h3>Desenvolvido por Pedro Henrique!</h3>
             </div>
         </footer>
     )
