@@ -8,6 +8,7 @@ export default function Rodape(){
     return(
         <footer>
             <div>
+                <h3>Desenvolvido por Pedro Henrique!</h3>
                 <p>2025 Pedro Cardoso - Todos os direitos reservados</p>
                 <div>
                     <p>Me acompanhe aqui:</p>
@@ -21,7 +22,6 @@ export default function Rodape(){
                         <Image src={IconeInstagram} alt="Icone do Instagram"/>
                     </Link>
                 </div>
-                <h3>Desenvolvido por Pedro Henrique!</h3>
             </div>
         </footer>
     )
