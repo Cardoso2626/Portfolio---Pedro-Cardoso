@@ -5,5 +5,24 @@
 .containerCabecalho{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.icones{
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
     
+}
+.containerNavCabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+.item1{
+    margin-left: 40px;
 }
