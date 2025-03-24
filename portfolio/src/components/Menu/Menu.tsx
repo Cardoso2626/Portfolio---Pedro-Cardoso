@@ -9,15 +9,15 @@ export default function Menu(){
     return(
         <nav>
             <li>
-                <Image src={IconeCasa} alt="Icone de casa"/>
+                <Image src={IconeCasa} alt="Icone de casa" className="icones"/>
                 <Link href={"/"}>Página principal</Link>
             </li>
             <li>
-                <Image src={IconeAvatar} alt="Icone de vatar"/>
+                <Image src={IconeAvatar} alt="Icone de vatar" className="icones"/>
                 <Link href={"/sobreMim"}>Sobre mim</Link>
             </li>
             <li>
-                <Image src={IconeComputador} alt="Icone de computador"/>
+                <Image src={IconeComputador} alt="Icone de computador" className="icones"/>
                 <Link href={"/projetos"}>Projetos</Link>
             </li>
         </nav>
