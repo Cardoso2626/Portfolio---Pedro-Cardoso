@@ -8,20 +8,26 @@ import IconeAvatar from "../../img/meIcon.png"
 export default function Menu(){
     return(
         <nav>
-            <div className="containerNavCabecalho">
-                <li>
-                    <Image src={IconeCasa} alt="Icone de casa" className="icones"/>
-                    <Link href={"/"}>Página principal</Link>
+            <ul className="containerNavCabecalho">
+                <li className="itemLi">
+                    <Link href={"/"}>
+                        <Image src={IconeCasa} alt="Icone de casa" className="icones"/>
+                    </Link>
+                    <Link href={"/"} className="linkEscrito">Página principal</Link>
                 </li>
-                <li>
-                    <Image src={IconeAvatar} alt="Icone de vatar" className="icones"/>
-                    <Link href={"/sobreMim"}>Sobre mim</Link>
+                <li className="itemLi">
+                    <Link href={"/sobreMim"}>
+                        <Image src={IconeAvatar} alt="Icone de vatar" className="icones"/>
+                    </Link>
+                    <Link href={"/sobreMim"} className="linkEscrito">Sobre mim</Link>
                 </li>
-                <li>
-                    <Image src={IconeComputador} alt="Icone de computador" className="icones"/>
-                    <Link href={"/projetos"}>Projetos</Link>
+                <li className="itemLi">
+                    <Link href={"/projetos"}>
+                        <Image src={IconeComputador} alt="Icone de computador" className="icones"/>
+                    </Link>
+                    <Link href={"/projetos"} className="linkEscrito">Projetos</Link>
                 </li>
-            </div>
+            </ul>               
         </nav>
     )
 }

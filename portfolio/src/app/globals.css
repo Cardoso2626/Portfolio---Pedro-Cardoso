@@ -21,6 +21,8 @@
     flex-direction: row;
     justify-content: space-around;
     margin-right: 30px;
+    list-style: none;
+    gap:30px;
 }
 
 .item1Cabecalho{
@@ -46,7 +48,11 @@ main{
     display: flex;
     margin-top: 8px;
     gap: 10px;
+    list-style: none;
 }
 .pFoot{
     margin-left: 5px;
+}
+.linkEscrito{
+    text-decoration: none;
 }
