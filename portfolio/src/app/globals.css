@@ -23,16 +23,30 @@
     margin-right: 30px;
 }
 
-.item1{
+.item1Cabecalho{
     margin-left: 40px;
 }
 .containerFooter{
     display: flex;
-    border: 2px solid black;
+    height: 90px;
+    justify-content: space-around;
+    align-items: center;
 }
 .containerPrincipal{
     min-height: 100vh;
 }
 main{
     min-height: 100vh;
+}
+.item3{
+    margin-top: 14px;
+    
+}
+.containerIcones{
+    display: flex;
+    margin-top: 8px;
+    gap: 10px;
+}
+.pFoot{
+    margin-left: 5px;
 }
