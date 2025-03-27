@@ -60,6 +60,8 @@ main{
     height: 500px;
 
 }
-.h2Principal{
-    
+.pPrincipal{
+    font-size: 23px;
+    margin-left: 50px;
+    margin-right: 23px;
 }

@@ -10,7 +10,7 @@ export default function Home(){
           <Image src={MinhaFoto} alt="Foto do criador" className="imgPrincipal"/>
         </div>
         <div>
-          <p>
+          <p className="pPrincipal">
             Nesse portfólio mostro um pouco sobre mim e do que eu mais gosto de fazer, PROGRAMAÇÃO.
             Acompanhe aqui: os conhecimentos das linguagens que possuo e alguns projetos que tenho, projetos em grupo, 
             e pessoais. Esse portfolio será atualizado continuamente, de acordo com o avanço da minha carreira. 
