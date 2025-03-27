@@ -65,3 +65,23 @@ main{
     margin-left: 50px;
     margin-right: 23px;
 }
+
+.iconesSobreMim:hover{
+    scale: 1.2;
+}
+
+.iconesSobreMim{
+    width: 150px;
+    height: 150px;
+    transition: 0.4s;
+}
+.containerIconeSObreMim{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.iconesSobreMim:hover{
+    scale: 1.1;
+    box-shadow: 0 0 10px rgb(30, 0, 255), 0 0 20px rgb(30, 0, 255), 0 0 40px rgb(30, 0, 255);
+    border-radius: 50%;
+}

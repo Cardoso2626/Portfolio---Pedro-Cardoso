@@ -19,13 +19,12 @@ export default function sbreMim (){
                 </div>
             </section>
             <section>
-                <div>
-                    <h4>Essas são as linguagens que obetenho conhecimento: </h4>
-                    <Image src={IconeJava} alt="Icone Java"/>
-                    <Image src={IconeJavaScript} alt="Icone JS"/>
-                    <Image src={IconePython} alt="Icone Python"/>
-                    <Image src={IconeSql} alt="Icone SQL"/>
-                    
+                <h4>Essas são as linguagens que obetenho conhecimento: </h4>
+                <div className="containerIconeSObreMim">
+                    <Image src={IconeJava} alt="Icone Java" className="iconesSobreMim"/>
+                    <Image src={IconeJavaScript} alt="Icone JS" className="iconesSobreMim"/>
+                    <Image src={IconePython} alt="Icone Python" className="iconesSobreMim"/>
+                    <Image src={IconeSql} alt="Icone SQL" className="iconesSobreMim"/>
                 </div>
             </section>
         </main>
