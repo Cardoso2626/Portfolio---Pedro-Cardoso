@@ -1,7 +1,7 @@
 export default function Projetos (){
     return(
-        <div>
+        <main>
             <h2>Esses são meus projetos</h2>
-        </div>
+        </main>
     )
 }

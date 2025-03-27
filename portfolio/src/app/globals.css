@@ -34,9 +34,6 @@
     justify-content: space-around;
     align-items: center;
 }
-.containerPrincipal{
-    min-height: 100vh;
-}
 main{
     min-height: 100vh;
 }
@@ -55,4 +52,17 @@ main{
 }
 .linkEscrito{
     text-decoration: none;
+}
+.containerPrincipal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+
+}
+.itemPrincipal{
+    border: 2px solid black;
+}
+.h2Principal{
+    
 }

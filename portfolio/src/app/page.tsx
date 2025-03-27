@@ -6,8 +6,8 @@ export default function Home(){
     <main>
       <section>
         <div className="containerPrincipal">
-          <h2>Bem vindos ao meu PORTFOLIO</h2>
-          <Image src={MinhaFoto} alt="Foto do criador"/>
+          <h2 className="itemPrincipal h2Principal">Bem vindos ao meu PORTFOLIO</h2>
+          <Image src={MinhaFoto} alt="Foto do criador" className="itemPrincipal imgPrincipal"/>
         </div>
         <div>
           <p>
