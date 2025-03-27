@@ -70,18 +70,22 @@ main{
     scale: 1.2;
 }
 
+.containerIconeSObreMim{
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 .iconesSobreMim{
     width: 150px;
     height: 150px;
     transition: 0.4s;
 }
-.containerIconeSObreMim{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
 .iconesSobreMim:hover{
     scale: 1.1;
     box-shadow: 0 0 10px rgb(30, 0, 255), 0 0 20px rgb(30, 0, 255), 0 0 40px rgb(30, 0, 255);
-    border-radius: 50%;
+    border-radius: 30px;
 }
