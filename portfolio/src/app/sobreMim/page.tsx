@@ -9,8 +9,8 @@ export default function sbreMim (){
         <main>
             <section>
                 <div>
-                    <h3>Cotando um pouco sobre mim</h3>
-                    <p>
+                    <h3 className="h3SobreMim">Cotando um pouco sobre mim</h3>
+                    <p className="pSobreMim">
                         Bom, meu nome é Pedro Cardoso, tenho 19 anos, e minha paixão com a programação surgiu muito por influência 
                         mas também por parte individual. Sempre fiquei imaginando como cada página funcionava, e quando era menor eu ficava no computador
                         vasculhando qualquer coisa que desse para clicar. Hoje, sigo com essa paixão, buscando conhecimentos, com muita força de vontade.
