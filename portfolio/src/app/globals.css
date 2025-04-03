@@ -76,6 +76,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 50px;
+    box-sizing: border-box;
 }
 
 .iconesSobreMim{
@@ -107,18 +108,23 @@ h4{
     font-size: 22px;
 }
 
-.cotainerCertificados{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 100px);
-    gap: 10px;
-
-    border: 2px solid black
-}
-.itemCertificado{
+.containerCertificados{
+    margin-top: 30px;
+    display: flex;
+    box-sizing: border-box;
     align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.item7{
+    border: 2px solid rgb(255, 0, 0);
+
 }
 .imgCertificado{
     width: 200px;
-    height: 200px;
+    height: 150px;
+    border-radius: 35px;
+   
 }

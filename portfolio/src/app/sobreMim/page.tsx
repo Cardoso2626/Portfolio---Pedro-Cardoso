@@ -38,25 +38,29 @@ export default function sbreMim (){
             <section>
                 <h4>Meus certificados...</h4>
                 <div className="containerCertificados">
-                    <div className="itemCertificado">
+                    <div  className="itemCertificado">
                         <Image src={Java} alt="certificado Java" className="imgCertificado"/>
+
                     </div>
                     <div className="itemCertificado">
                         <Image src={Python1} alt="certificado Python" className="imgCertificado"/>
-
+                        
                     </div>
                     <div className="itemCertificado">
+                        
                         <Image src={Python2} alt="certificado Python" className="imgCertificado"/>
-                    </div >
+                    </div>
                     <div className="itemCertificado">
                         <Image src={JavaScript} alt="certificado JavaScript"className="imgCertificado"/>
+                        
                     </div>
                     <div className="itemCertificado">
-                        <Image src={Senac1} alt="certificado Senac" className="imgCertificado"/>
+                        <Image src={Senac1} alt="certificado Senac" className="imgCertificado"/>                
+                        
                     </div>
                     <div className="itemCertificado">
                         <Image src={Senac2} alt="certificado Senac" className="imgCertificado"/>
-
+                        
                     </div>
                     <div className="itemCertificado">
                         <Image src={OneBit} alt="certificado OneBitCode" className="imgCertificado"/>
