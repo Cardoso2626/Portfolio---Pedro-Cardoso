@@ -128,3 +128,11 @@ h4{
     border-radius: 35px;
    
 }
+.itemCertificado{
+    transition: 0.2s;
+
+
+}
+.itemCertificado:hover{
+    scale: 1.8;
+}
