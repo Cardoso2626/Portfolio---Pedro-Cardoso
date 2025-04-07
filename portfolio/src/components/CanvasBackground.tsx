@@ -3,61 +3,7 @@
 import { useEffect, useRef } from 'react';
 
 const CanvasBackground = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const colors = ['#121E2C', '#0D0D0D', '#1A1A1A', '#2B1B38', '#3A1B38', '#4A1B38'];
-
-  // A classe precisa vir antes da declaração da lista de bolas, para poder ser usada como tipo
-  class Ball {
-    x: number;
-    y: number;
-    dx: number;
-    dy: number;
-    radius: number;
-    color: string;
-    ctx: CanvasRenderingContext2D;
-
-    constructor(
-      x: number,
-      y: number,
-      dx: number,
-      dy: number,
-      radius: number,
-      color: string,
-      ctx: CanvasRenderingContext2D
-    ) {
-      this.x = x;
-      this.y = y;
-      this.dx = dx;
-      this.dy = dy;
-      this.radius = radius;
-      this.color = color;
-      this.ctx = ctx;
-    }
-
-    draw() {
-      this.ctx.beginPath();
-      this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-      this.ctx.fillStyle = this.color;
-      this.ctx.fill();
-      this.ctx.closePath();
-    }
-
-    update(canvas: HTMLCanvasElement) {
-      if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
-        this.dx = -this.dx;
-      }
-      if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
-        this.dy = -this.dy;
-      }
-
-      this.x += this.dx;
-      this.y += this.dy;
-
-      this.draw();
-    }
-  }
-
-  const balls: Ball[] = [];
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -69,8 +15,48 @@ const CanvasBackground = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
+    const colors = ['#00BFFF', '#1E90FF', '#87CEFA', '#4682B4', '#5F9EA0', '#00CED1'];
+
+    class Ball {
+      x: number;
+      y: number;
+      dx: number;
+      dy: number;
+      radius: number;
+      color: string;
+
+      constructor(x: number, y: number, dx: number, dy: number, radius: number, color: string) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.radius = radius;
+        this.color = color;
+      }
+
+      draw(context: CanvasRenderingContext2D) {
+        context.beginPath();
+        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        context.fillStyle = this.color;
+        context.fill();
+        context.closePath();
+      }
+
+      update(context: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
+        if (this.x + this.radius > canvas.width || this.x - this.radius < 0) this.dx = -this.dx;
+        if (this.y + this.radius > canvas.height || this.y - this.radius < 0) this.dy = -this.dy;
+
+        this.x += this.dx;
+        this.y += this.dy;
+
+        this.draw(context);
+      }
+    }
+
+    const balls: Ball[] = [];
+
     const init = () => {
-      balls.length = 0;
+      balls.length = 0; // Clear previous
       for (let i = 0; i < 50; i++) {
         const radius = Math.random() * 20 + 10;
         const x = Math.random() * (canvas.width - radius * 2) + radius;
@@ -78,18 +64,19 @@ const CanvasBackground = () => {
         const dx = (Math.random() - 0.5) * 2;
         const dy = (Math.random() - 0.5) * 2;
         const color = colors[Math.floor(Math.random() * colors.length)];
-        balls.push(new Ball(x, y, dx, dy, radius, color, ctx));
+        balls.push(new Ball(x, y, dx, dy, radius, color));
       }
     };
 
     const animate = () => {
       requestAnimationFrame(animate);
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      balls.forEach((ball) => ball.update(canvas));
-    };
 
-    init();
-    animate();
+      // Fundo
+      ctx.fillStyle = '#0a0f1a';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      balls.forEach((ball) => ball.update(ctx, canvas));
+    };
 
     const handleResize = () => {
       canvas.width = window.innerWidth;
@@ -98,6 +85,10 @@ const CanvasBackground = () => {
     };
 
     window.addEventListener('resize', handleResize);
+
+    init();
+    animate();
+
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
