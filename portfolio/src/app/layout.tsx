@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Cabecalho from "../components/Cabecalho/Cabecalho";
 import Rodape from "../components/Rodape/Rodape";
-import "./globals.css"
-
+import CanvasBackground from "../components/CanvasBackground"; // <- Importa aqui
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Esse é meu portfólio",
@@ -16,10 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>
-        <Cabecalho/>
+      <body style={{ position: "relative", overflowX: "hidden" }}>
+        <CanvasBackground /> {/* <- Adiciona aqui */}
+        <Cabecalho />
         {children}
-        <Rodape/>
+        <Rodape />
       </body>
     </html>
   );
