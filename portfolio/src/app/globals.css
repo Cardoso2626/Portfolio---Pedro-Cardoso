@@ -9,7 +9,8 @@ body {
     overflow-x: hidden;
     background: transparent;
 }
-  
+
+
 .containerCabecalho{
     display: flex;
     flex-direction: row;
@@ -36,6 +37,13 @@ body {
 .item1Cabecalho{
     margin-left: 40px;
 }
+.h1Cabecalho{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+
 .containerFooter{
     display: flex;
     height: 90px;
@@ -60,6 +68,10 @@ main{
 }
 .linkEscrito{
     text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    position: relative;
+    bottom: 8px;
 }
 .containerPrincipal{
     display: flex;
@@ -173,6 +185,7 @@ h4{
     position: relative;
     bottom: 187px;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .imgEarthIn{
     width: 236px;
