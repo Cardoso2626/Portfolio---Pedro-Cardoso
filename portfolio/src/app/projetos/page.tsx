@@ -8,23 +8,20 @@ export default function Projetos (){
         <main>
             <section>
                 <h2 className="h2Projeto">Esses são meus projetos</h2>
-                <div>
-                    <div>
+                <div className="containerProjeto">
+                    <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
-                        <Link href={"https://earth-in-balance.vercel.app/"} target="_blank" rel="noopener noreferrer">
+                        <Link href={"https://earth-in-balance.vercel.app/"} target="_blank" rel="noopener noreferrer" className="link">
                             <Image src={Earth} alt="Página earth in balance" className="imgEarthIn"/> 
                         </Link>
-                        <p>Earth In Balance</p>
+                        <p className="pEarth">Earth In Balance</p>
                     </div>
-                    <div>
+                    <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
                     </div>
-                    <div>
+                    <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
                     </div>
-                   
-                    
-                    
                 </div>
             </section>
         </main>

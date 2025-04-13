@@ -151,14 +151,44 @@ h4{
     
 }
 
-.imgEarthIn{
-    width: 250px;
-    height: 150px;
-    background-color: black;
-    opacity: 20%;
-    transition: 0.3s;
-}
 .imgEarthIn:hover{
     opacity: 100%;
+    
+}
+
+.containerProjeto{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px
+    
+}
+
+.containerItemProjeto{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.pEarth{
+    position: relative;
+    bottom: 187px;
+    text-align: center;
+}
+.imgEarthIn{
+    width: 236px;
+    height: 114px;
+    opacity: 20%;
+    transition: 0.3s;
+    
+}
+.link{
+    position: relative;
+    bottom: 186px;
+    border-radius: 7px;
+    left: 7px;
+}
+.imgEarthIn:hover{
+    
+
     
 }
