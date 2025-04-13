@@ -7,8 +7,8 @@ import Image from "next/image"
 export default function Rodape(){
     return(
         <footer className="containerFooter">
-            <h3 className="itemFoot item1">Desenvolvido por Pedro Henrique!</h3>
-            <p className="itemFoot item2">2025. Pedro Cardoso - Todos os direitos reservados</p>
+            <h3 className="itemFoot item1Foot">Desenvolvido por Pedro Henrique!</h3>
+            <p className="itemFoot item2Foot">2025. Pedro Cardoso - Todos os direitos reservados</p>
             <div className="itemFoot item3">
                 <p className="pFoot">Me acompanhe aqui:</p>
                 <ul className="containerIcones">

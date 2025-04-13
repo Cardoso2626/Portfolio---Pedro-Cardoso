@@ -27,7 +27,7 @@ export default function sbreMim (){
                 </div>
             </section>
             <section>
-                <h4>Essas são as linguagens que obetenho conhecimento: </h4>
+                <h4 className="h4SobreMim">Essas são as linguagens que obetenho conhecimento: </h4>
                 <div className="containerIconeSObreMim">
                     <Image src={IconeJava} alt="Icone Java" className="iconesSobreMim"/>
                     <Image src={IconeJavaScript} alt="Icone JS" className="iconesSobreMim"/>
@@ -36,7 +36,7 @@ export default function sbreMim (){
                 </div>
             </section>
             <section>
-                <h4>Meus certificados...</h4>
+                <h4 className="h4SobreMim">Meus certificados...</h4>
                 <div className="containerCertificados">
                     <div  className="itemCertificado">
                         <Image src={Java} alt="certificado Java" className="imgCertificado"/>
