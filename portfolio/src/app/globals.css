@@ -117,17 +117,12 @@ h4{
 }
 
 .containerCertificados{
-    margin-top: 30px;
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
     justify-content: center;
-
-}
-.item7{
-    border: 2px solid rgb(255, 0, 0);
+    gap: 30px;
+    margin-bottom: 90px;
+    margin-top: 60px;
 
 }
 .imgCertificado{
@@ -142,7 +137,7 @@ h4{
 
 }
 .itemCertificado:hover{
-    scale: 1.8;
+    scale: 1.6;
 }
 .h2Projeto{
     margin-top: 30px;
