@@ -79,6 +79,11 @@ main{
     align-items: center;
     height: 500px;
 
+    
+}
+.imgPrincipal{
+    height: 400px;
+    width: 300px;
 }
 .pPrincipal{
     font-size: 23px;
