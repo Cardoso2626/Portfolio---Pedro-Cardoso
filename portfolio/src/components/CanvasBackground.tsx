@@ -15,7 +15,8 @@ const CanvasBackground = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const colors = ['#00BFFF', '#1E90FF', '#87CEFA', '#4682B4', '#5F9EA0', '#00CED1'];
+   
+    const ballColor = 'rgba(17, 75, 157, 0.5)';
 
     class Ball {
       x: number;
@@ -56,23 +57,22 @@ const CanvasBackground = () => {
     const balls: Ball[] = [];
 
     const init = () => {
-      balls.length = 0; // Clear previous
+      balls.length = 0;
       for (let i = 0; i < 50; i++) {
-        const radius = Math.random() * 20 + 10;
+        const radius = Math.random() * 8 + 4; 
         const x = Math.random() * (canvas.width - radius * 2) + radius;
         const y = Math.random() * (canvas.height - radius * 2) + radius;
-        const dx = (Math.random() - 0.5) * 2;
-        const dy = (Math.random() - 0.5) * 2;
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        balls.push(new Ball(x, y, dx, dy, radius, color));
+        const dx = (Math.random() - 0.5) * 1.5;
+        const dy = (Math.random() - 0.5) * 1.5;
+        balls.push(new Ball(x, y, dx, dy, radius, ballColor));
       }
     };
 
     const animate = () => {
       requestAnimationFrame(animate);
 
-      // Fundo
-      ctx.fillStyle = '#0a0f1a';
+
+      ctx.fillStyle = '#A4A5A6';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       balls.forEach((ball) => ball.update(ctx, canvas));
