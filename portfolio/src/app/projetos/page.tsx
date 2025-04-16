@@ -15,12 +15,14 @@ export default function Projetos (){
                             <Image src={Earth} alt="Página earth in balance" className="imgEarthIn"/> 
                         </Link>
                         <p className="pEarth">Earth In Balance</p>
+                        <Link href={"https://github.com/Cardoso2626/gs_front"} className="linkRepositorio">Link do repostitório</Link>
                     </div>
                     <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
                     </div>
                     <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
+                        <h3 className="logoMais">Loading (:</h3>
                     </div>
                 </div>
             </section>

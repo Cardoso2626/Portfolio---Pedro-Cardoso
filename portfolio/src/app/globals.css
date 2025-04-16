@@ -229,6 +229,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
     
 }
 
@@ -236,21 +237,56 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.2 ease;
+    
+}
+
+.logoMais{
+    position: relative;
+    bottom: 140px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s ease;
+}
+.logoMais:hover{
+    color: white;
+    
+
 }
 .itemProjeto{
-    height: 350px;
+    height: 260px;
     width: 300px;
     border-radius: 10px;
     transition: 0.2s ease;
 }
 .itemProjeto:hover{
-    background-color: #0238598a;
+    background-color: #5757578a;
+    box-shadow:
+    0 0 8px #559bfc,     
+    0 0 20px #0f4ed4,    
+    0 4px 12px rgba(0, 0, 0, 0.3); 
 }
 .pEarth{
     position: relative;
     bottom: 187px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    transition: color 0.3 ease;
+}
+.linkRepositorio{
+    position: relative;
+    bottom: 120px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.2;
+    transition: color 0.2s ease;
+}
+.containerItemProjeto:hover .pEarth {
+    color: rgb(19, 248, 19);
+}
+.containerItemProjeto:hover .linkRepositorio {
+    color: white;
+    opacity: 1;
 }
 .imgEarthIn{
     width: 236px;
