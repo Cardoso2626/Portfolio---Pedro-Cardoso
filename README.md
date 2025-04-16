@@ -1,6 +1,6 @@
 # 🎨 Bem-vindo ao meu **PORTFÓLIO** 🚀  
 
-## 🔥 VERSÃO FINAL  
+## 🔥 VERCEL https://portfolio-pedrocardoso.vercel.app/
 
 Seja bem-vindo ao meu portfólio! Aqui você encontrará meus projetos, habilidades e formas de contato.  
 
