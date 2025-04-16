@@ -25,9 +25,11 @@ export default function sbreMim (){
                         Atualmente trabalho na Motorola Solutions Brasil como jovem aprendiz e faço faculdade na FIAP (Faculdadede Informática e Administração Paulista)
                     </p>
                     <p className="pSobreMim">Quer saber mais sobre minhas soft skills e hard skills? Baixe meu currículo</p>
-                    <a href="/pedro_Cv.pdf" download className="baixarCurriculo">
-                        Baixar currículo (seguro)
-                    </a>
+                    <div className="containerCurriculo">
+                        <a href="/pedro_Cv.pdf" download className="baixarCurriculo">
+                            Baixar currículo (seguro)
+                        </a>
+                    </div>
                 </div>
             </section>
             <section>

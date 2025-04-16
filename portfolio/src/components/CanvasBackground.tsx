@@ -16,7 +16,7 @@ const CanvasBackground = () => {
     canvas.height = window.innerHeight;
 
    
-    const ballColor = 'rgba(17, 75, 157, 0.5)';
+    const ballColor = 'rgba(17, 75, 157, 0.203)';
 
     class Ball {
       x: number;
