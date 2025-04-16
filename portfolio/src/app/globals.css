@@ -145,7 +145,22 @@ main{
     margin-left: 70px;
     font-size: 18px;   
     margin-top: 60px;
+    margin-bottom: 50px;
 }
+
+.baixarCurriculo{
+    margin-left: 650px;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #0238597c;
+    color: white;
+    transition: 1s ease;
+}
+.baixarCurriculo:hover{
+    background-color: #023859;
+}
+
 
 .h4SobreMim{
     text-align:center;
