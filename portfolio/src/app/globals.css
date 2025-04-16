@@ -10,7 +10,6 @@ body {
     background: transparent;
 }
 
-
 .containerCabecalho{
     display: flex;
     flex-direction: row;
@@ -19,12 +18,7 @@ body {
     height: 90px;
 }
 
-.icones{
-    width: 30px;
-    height: 30px;
-    padding-right: 15px;
-    
-}
+
 .containerNavCabecalho{
     display: flex;
     flex-direction: row;
@@ -44,22 +38,43 @@ body {
 }
 
 
+.linkEscritoHeader{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    position: relative;
+    bottom: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.linkEscritoHeader:hover{
+    color: #023859;
+
+}
 .containerFooter{
     display: flex;
     height: 90px;
     justify-content: space-around;
     align-items: center;
 }
+
+.icones{
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    transition: 0.3s ease;
+}
+
 .item2Foot{
     font-family:Arial, Helvetica, sans-serif;
     font-style: italic;
 }
 .item1Foot{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     font-style: oblique;
-    
-
+    opacity: 70%;
+    transition: 0.3s ease;
 }
 main{
     min-height: 100vh;
@@ -68,7 +83,7 @@ main{
     margin-top: 14px;
     
 }
-.containerIcones{
+.containerIconesFoot{
     display: flex;
     margin-top: 8px;
     gap: 10px;
@@ -77,13 +92,10 @@ main{
 .pFoot{
     margin-left: 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 0.3s;
 }
-.linkEscrito{
-    text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    position: relative;
-    bottom: 8px;
+.pFoot:hover{
+    color: #023859;
 }
 .containerPrincipal{
     display: flex;
@@ -205,23 +217,27 @@ main{
     
 }
 
-.imgEarthIn:hover{
-    opacity: 100%;
-    
-}
-
 .containerProjeto{
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    gap: 20px
+    gap: 20px;
     
 }
 
 .containerItemProjeto{
     display: flex;
     flex-direction: column;
-    height: 200px;
+    align-items: center;
+}
+.itemProjeto{
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+.itemProjeto:hover{
+    background-color: #0238598a;
 }
 .pEarth{
     position: relative;
@@ -234,16 +250,15 @@ main{
     height: 114px;
     opacity: 20%;
     transition: 0.3s;
+    border-radius: 4px;
     
+}
+.imgEarthIn:hover{
+    opacity: 100%;
 }
 .link{
     position: relative;
     bottom: 186px;
-    border-radius: 7px;
-    left: 7px;
-}
-.imgEarthIn:hover{
-    
-
-    
+    border-radius: 10px;
+    left: 0px;
 }

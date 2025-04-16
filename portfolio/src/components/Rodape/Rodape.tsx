@@ -11,20 +11,20 @@ export default function Rodape(){
             <p className="itemFoot item2Foot">2025. Pedro Cardoso - Todos os direitos reservados</p>
             <div className="itemFoot item3">
                 <p className="pFoot">Me acompanhe aqui:</p>
-                <ul className="containerIcones">
+                <ul className="containerIconesFoot">
                     <li>
                         <Link target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/pedro-saraiva1/"}>
-                            <Image src={IconeLinkeIn} alt="Icone do LinkedIn" className="itemIcone icones"/>
+                            <Image src={IconeLinkeIn} alt="Icone do LinkedIn" className="icones"/>
                         </Link>
                     </li>
                     <li>
                         <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/Cardoso2626"}>
-                            <Image src={IconeGithub} alt="Icone do GitHub" className="itemIcone icones"/>
+                            <Image src={IconeGithub} alt="Icone do GitHub" className="icones"/>
                         </Link>
                     </li>
                     <li>
                         <Link target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/ph.saraivax/"}>
-                            <Image src={IconeInstagram} alt="Icone do Instagram" className="itemIcone icones"/>
+                            <Image src={IconeInstagram} alt="Icone do Instagram" className="icones"/>
                         </Link>
                     </li>
                 </ul>

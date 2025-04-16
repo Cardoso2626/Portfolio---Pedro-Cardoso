@@ -13,19 +13,19 @@ export default function Menu(){
                     <Link href={"/"}>
                         <Image src={IconeCasa} alt="Icone de casa" className="icones"/>
                     </Link>
-                    <Link href={"/"} className="linkEscrito">Página principal</Link>
+                    <Link href={"/"} className="linkEscritoHeader">Página principal</Link>
                 </li>
                 <li className="itemLi">
                     <Link href={"/sobreMim"}>
                         <Image src={IconeAvatar} alt="Icone de vatar" className="icones"/>
                     </Link>
-                    <Link href={"/sobreMim"} className="linkEscrito">Sobre mim</Link>
+                    <Link href={"/sobreMim"} className="linkEscritoHeader">Sobre mim</Link>
                 </li>
                 <li className="itemLi">
                     <Link href={"/projetos"}>
                         <Image src={IconeComputador} alt="Icone de computador" className="icones"/>
                     </Link>
-                    <Link href={"/projetos"} className="linkEscrito">Projetos</Link>
+                    <Link href={"/projetos"} className="linkEscritoHeader">Projetos</Link>
                 </li>
             </ul>               
         </nav>
