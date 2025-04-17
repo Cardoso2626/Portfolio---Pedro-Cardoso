@@ -269,6 +269,14 @@ main{
     color: black;
     transition: color 0.2s ease;
 }
+.pBlue{
+    position: relative;
+    bottom: 187px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    transition: color 0.2s ease;
+}
 .linkRepositorio{
     position: relative;
     bottom: 120px;
@@ -280,6 +288,7 @@ main{
     font-size: 18px;
     transition: color 0.2s ease;
 }
+
 .containerItemProjeto:hover .pEarth {
     color: rgb(19, 248, 19);
 }
@@ -290,6 +299,10 @@ main{
 .containerItemProjeto:hover .logoMais{  
     color: white;
 }
+.containerItemProjeto:hover .pBlue{
+    color: #033cb8;
+}
+
 .imgEarthIn{
     width: 236px;
     height: 114px;

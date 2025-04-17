@@ -2,6 +2,7 @@ import Image from "next/image"
 import Pc from "../../img/pcProjetos.png"
 import Earth from "../../img/earthInBalance.png"
 import Link from "next/link"
+import Blue from "../../img/blueWaveCompany.png"
 
 export default function Projetos (){
     return(
@@ -15,10 +16,15 @@ export default function Projetos (){
                             <Image src={Earth} alt="Página earth in balance" className="imgEarthIn"/> 
                         </Link>
                         <p className="pEarth">Earth In Balance</p>
-                        <Link href={"https://github.com/Cardoso2626/gs_front"} className="linkRepositorio">Link do repostitório</Link>
+                        <Link href={"https://github.com/Cardoso2626/gs_front"} className="linkRepositorio">Repostitório</Link>
                     </div>
                     <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
+                        <Link href={"https://blue-wave-company-copy.vercel.app/pags-sec/doresDoOceano.html"} target="_blank" rel="noopener noreferrer" className="link">
+                            <Image src={Blue} alt="Página blue wave company" className="imgEarthIn"/>
+                        </Link>
+                        <p className="pBlue">Blue Wave Company</p>
+                        <Link href={"https://github.com/MarcosVini222/projeto-blue-wave-company"} className="linkRepositorio">Repostitório</Link>
                     </div>
                     <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
