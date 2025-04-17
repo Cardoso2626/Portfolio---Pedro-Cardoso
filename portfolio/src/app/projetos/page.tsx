@@ -8,7 +8,8 @@ export default function Projetos (){
     return(
         <main>
             <section>
-                <h2 className="h2Projeto">Esses são meus projetos</h2>
+                <h2 className="h2Projeto">Esses são meus projetos!</h2>
+                <p className="pSobreProjeto">Aqui estão meus projetos que fiz com contribuidores. Logo estão vindo mais projetos, tanto pessoais, quanto em grupo. Entrem no repositório para saber mais sobre o projeto em si.</p>
                 <div className="containerProjeto">
                     <div className="itemProjeto containerItemProjeto">
                         <Image src={Pc} alt="Icone de pc" className="imagePc"/>
