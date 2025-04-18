@@ -195,6 +195,7 @@ main{
     gap: 30px;
     margin-bottom: 90px;
     margin-top: 60px;
+    flex-wrap: wrap;
 
 }
 .imgCertificado{
@@ -412,9 +413,40 @@ main{
     .h2Principal{
         font-size: 18px;
     }
+    .h3SobreMim{
+        font-size: 17px;
+    }
+    .pSobreMim{
+        font-size: 15px;
+    }
+    .h4SobreMim{
+        font-size: 17px;
+    }
+    .iconesSobreMim{
+        width: 80px;
+        height: 80px;
+    }
+    .imgCertificado{
+        width: 160px;
+        height: 100px;
+    }
+    .containerCertificados{
+        gap: 10px;
+    }
 
 }
 
+@media(max-width:742px){
+    .imgCertificado{
+        width: 120px;
+        height: 80px;
+    }
+    .containerCertificados{
+        gap: 5px;
+        margin-left: 80px;
+        grid-template-columns: 180px 180px 180px;
+    }
+}
 @media (max-width: 583px){
     main{
         min-height: 70vh;
@@ -493,6 +525,31 @@ main{
     }
     .h2Principal{
         font-size: 10px;
+    }
+    .h3SobreMim{
+        font-size: 12px;
+    }
+    .pSobreMim{
+        font-size: 11px;
+    }
+    .h4SobreMim{
+        font-size: 12px;
+    }
+    .iconesSobreMim{
+        width: 50px;
+        height: 50px;
+    }
+    .imgCertificado{
+        width: 80px;
+        height: 50px;
+    }
+    .containerCertificados{
+        gap: 2px;
+        margin-left: 60px;
+        grid-template-columns: 100px 100px 100px;
+    }
+    .baixarCurriculo{
+        font-size: 12px;
     }
 }
 @media (max-width: 349px){
