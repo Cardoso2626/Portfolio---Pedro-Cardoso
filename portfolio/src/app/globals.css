@@ -361,4 +361,46 @@ main{
     .link{
         bottom: 92px;
     }
+    .pBlue{
+        bottom: 96px;
+        font-size: 10px;
+    }
+    .pEarth{
+        bottom: 96px;
+        font-size: 10px;
+    }
+    .linkRepositorio{
+        bottom: 60px;
+        font-size: 10px;
+    }
+    .logoMais{
+        bottom: 73px;
+    }
+    .icones{
+        width: 18px;
+        height: 18px;
+    }
+    .linkEscritoHeader{
+        font-size: 10px;
+    }
+    .h1Cabecalho{
+        font-size: 22px;
+    }
+    .containerNavCabecalho{
+        gap: 20px;
+    }
+    .item2Foot{
+        font-size: 8px;
+    }
+    .item1Foot{
+        font-size: 10px;
+    }
+    .containerIconesFoot{
+        gap: 1px;
+    }
+    .h2Projeto{
+        font-size: 15px;
+    }
+
 }
+
