@@ -331,6 +331,7 @@ main{
 }
 
 @media (max-width: 1053px){
+    
     .item2Foot{
         font-size: 15px;
     }
@@ -400,6 +401,16 @@ main{
     }
     .h2Projeto{
         font-size: 15px;
+    }
+    .pPrincipal{
+        font-size: 15px;
+    }
+    .imgPrincipal{
+        height: 240px;
+        width: 180px;
+    }
+    .h2Principal{
+        font-size: 18px;
     }
 
 }
@@ -472,6 +483,17 @@ main{
         font-size: 8px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    .pPrincipal{
+        margin-bottom: 60px;
+        font-size: 12px;
+    }
+    .imgPrincipal{
+        height: 180px;
+        width: 120px;
+    }
+    .h2Principal{
+        font-size: 10px;
+    }
 }
 @media (max-width: 349px){
 
@@ -482,7 +504,7 @@ main{
     }
     .linkEscritoHeader{
         font-size: 7px;
-        padding-right: 20px;
+
     }
     .h1Cabecalho{
         font-size: 14px;
