@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body style={{ position: "relative", overflowX: "hidden" }}>
-        <CanvasBackground /> {/* <- Adiciona aqui */}
+        <CanvasBackground />
         <Cabecalho />
         {children}
         <Rodape />
