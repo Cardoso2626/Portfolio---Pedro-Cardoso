@@ -329,3 +329,36 @@ main{
     border-radius: 10px;
     left: 0px;
 }
+
+@media (max-width: 1053px){
+    .item2Foot{
+        font-size: 15px;
+    }
+    .pFoot{
+        font-size: 12px;
+    }
+    .item1Foot{
+        font-size: 15px;
+    }
+}
+@media (max-width: 940px){
+    .pSobreProjeto{
+        font-size: 12px;
+    }
+    .imagePc{
+        width: 150px;
+        height: 100px;
+    }
+    .itemProjeto{
+        height: 160px;
+        width: 200px;
+    }
+    .imgEarthIn{
+        width: 142px;
+        height: 56px;
+        
+    }
+    .link{
+        bottom: 92px;
+    }
+}
