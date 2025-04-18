@@ -404,3 +404,104 @@ main{
 
 }
 
+@media (max-width: 583px){
+    main{
+        min-height: 70vh;
+    }
+    .pSobreProjeto{
+        font-size: 8px;
+    }
+    .imagePc{
+        width: 100px;
+        height: 70px;
+    }
+    .itemProjeto{
+        height: 120px;
+        width: 130px;
+    }
+    .imgEarthIn{
+        width: 94px;
+        height: 42px;
+        
+    }
+    .link{
+        bottom: 65px;
+    }
+    .pBlue{
+        bottom: 70px;
+        font-size: 6px;
+    }
+    .pEarth{
+        bottom: 70px;
+        font-size: 6px;
+    }
+    .linkRepositorio{
+        bottom: 40px;
+        font-size: 8px;
+    }
+    .logoMais{
+        bottom: 53px;
+        font-size: 12px;
+    }
+    .icones{
+        width: 14px;
+        height: 14px;
+    }
+    .linkEscritoHeader{
+        font-size: 7px;
+    }
+    .h1Cabecalho{
+        font-size: 18px;
+    }
+    .containerNavCabecalho{
+        gap: 8px;
+    }
+    .item2Foot{
+        font-size: 5px;
+    }
+    .item1Foot{
+        font-size: 5px;
+    }
+    .containerIconesFoot{
+        gap: 1px;
+    }
+    .h2Projeto{
+        font-size: 10px;
+    }
+    .pFoot{
+        font-size: 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+@media (max-width: 349px){
+
+    .icones{
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+    }
+    .linkEscritoHeader{
+        font-size: 7px;
+        padding-right: 20px;
+    }
+    .h1Cabecalho{
+        font-size: 14px;
+    }
+    .containerNavCabecalho{
+        gap: 3px;
+    }
+    .item2Foot{
+        font-size: 3px;
+    }
+    .item1Foot{
+        font-size: 5px;
+        text-wrap: wrap;
+    }
+    .containerIconesFoot{
+        gap: 1px;
+    }
+    .pFoot{
+        font-size: 7px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
