@@ -6,7 +6,7 @@ export default function Home(){
     <main>
       <section>
         <div className="containerPrincipal">
-          <h2 className="h2Principal">Bem vindos ao meu PORTFOLIO</h2>
+          <h2 className="h2Principal">Bem vindos ao meu portfólio</h2>
           <Image src={MinhaFoto} alt="Foto do criador" className="imgPrincipal"/>
         </div>
         <div>
