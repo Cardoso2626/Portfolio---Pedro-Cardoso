@@ -33,7 +33,7 @@ export default function sbreMim (){
                 </div>
             </section>
             <section>
-                <h4 className="h4SobreMim">Essas são as linguagens que obetenho conhecimento: </h4>
+                <h4 className="h4SobreMim">Essas são as linguagens que obtenho conhecimento: </h4>
                 <div className="containerIconeSObreMim">
                     <Image src={IconeJava} alt="Icone Java" className="iconesSobreMim"/>
                     <Image src={IconeJavaScript} alt="Icone JS" className="iconesSobreMim"/>
